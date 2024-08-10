@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		014DE25E8833C760D9200E19 /* Pods_MKL_NifflersModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D36B537FE5DAA246D93D04 /* Pods_MKL_NifflersModule.framework */; };
+		9E5A6EDC2C682974004884C2 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A6EDB2C682974004884C2 /* DataRepository.swift */; };
+		9E5A6EDF2C682A99004884C2 /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A6EDE2C682A99004884C2 /* MarketItem.swift */; };
 		9E6D27712C67ED39001665D1 /* MKL_NifflersModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6D27702C67ED39001665D1 /* MKL_NifflersModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00D36B537FE5DAA246D93D04 /* Pods_MKL_NifflersModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKL_NifflersModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1E9FF0B9F5CDB75E8C3BEB /* Pods-MKL-NifflersModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKL-NifflersModule.debug.xcconfig"; path = "Target Support Files/Pods-MKL-NifflersModule/Pods-MKL-NifflersModule.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5A6EDB2C682974004884C2 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		9E5A6EDE2C682A99004884C2 /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
 		9E6D276D2C67ED39001665D1 /* MKL_NifflersModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKL_NifflersModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6D27702C67ED39001665D1 /* MKL_NifflersModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKL_NifflersModule.h; sourceTree = "<group>"; };
 		CF8D19529D693F0161B199CC /* Pods-MKL-NifflersModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKL-NifflersModule.release.xcconfig"; path = "Target Support Files/Pods-MKL-NifflersModule/Pods-MKL-NifflersModule.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,8 +41,32 @@
 				5A1E9FF0B9F5CDB75E8C3BEB /* Pods-MKL-NifflersModule.debug.xcconfig */,
 				CF8D19529D693F0161B199CC /* Pods-MKL-NifflersModule.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E5A6ED92C68291E004884C2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A6EDD2C682A88004884C2 /* entity */,
+				9E5A6EDA2C682929004884C2 /* repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9E5A6EDA2C682929004884C2 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A6EDB2C682974004884C2 /* DataRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		9E5A6EDD2C682A88004884C2 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A6EDE2C682A99004884C2 /* MarketItem.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 		9E6D27632C67ED39001665D1 = {
@@ -62,6 +90,7 @@
 		9E6D276F2C67ED39001665D1 /* MKL-NifflersModule */ = {
 			isa = PBXGroup;
 			children = (
+				9E5A6ED92C68291E004884C2 /* Domain */,
 				9E6D27702C67ED39001665D1 /* MKL_NifflersModule.h */,
 			);
 			path = "MKL-NifflersModule";
@@ -119,6 +148,7 @@
 				TargetAttributes = {
 					9E6D276C2C67ED39001665D1 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -180,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5A6EDF2C682A99004884C2 /* MarketItem.swift in Sources */,
+				9E5A6EDC2C682974004884C2 /* DataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A1E9FF0B9F5CDB75E8C3BEB /* Pods-MKL-NifflersModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -338,6 +371,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF8D19529D693F0161B199CC /* Pods-MKL-NifflersModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
