@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DataRepository {
+public protocol DataRepository {
     
     func saveItem() async throws -> Bool
     func fetchItems() -> Bool
