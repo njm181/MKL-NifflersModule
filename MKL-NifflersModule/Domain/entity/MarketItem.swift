@@ -14,5 +14,5 @@ public struct MarketItem {
     public init(name: String, category: String) {
             self.name = name
             self.category = category
-        }
+    }
 }

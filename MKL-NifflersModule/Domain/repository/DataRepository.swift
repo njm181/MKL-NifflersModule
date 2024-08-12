@@ -9,6 +9,6 @@ import Foundation
 
 public protocol DataRepository {
     
-    func saveItem() async throws -> Bool
+    func saveItem(marketItem: MarketItem) async throws -> Bool
     func fetchItems() -> Bool
 }
