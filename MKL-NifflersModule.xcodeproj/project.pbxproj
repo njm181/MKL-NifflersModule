@@ -13,14 +13,14 @@
 		9E6D27712C67ED39001665D1 /* MKL_NifflersModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6D27702C67ED39001665D1 /* MKL_NifflersModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E80A3FB2C71287400F4A2B9 /* MarketRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A3FA2C71287400F4A2B9 /* MarketRequirement.swift */; };
 		9E80A3FE2C71293000F4A2B9 /* MarketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A3FD2C71292F00F4A2B9 /* MarketList.swift */; };
-		9E80A4012C712A6700F4A2B9 /* StoreItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4002C712A6700F4A2B9 /* StoreItemUseCase.swift */; };
+		9E80A4012C712A6700F4A2B9 /* StoreItemUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4002C712A6700F4A2B9 /* StoreItemUseCaseProtocol.swift */; };
 		9E80A4042C712B9C00F4A2B9 /* WrapperDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4032C712B9C00F4A2B9 /* WrapperDataResponse.swift */; };
 		9E80A4062C712DF300F4A2B9 /* DomainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4052C712DF300F4A2B9 /* DomainResponse.swift */; };
 		9E80A4082C71348A00F4A2B9 /* StoreItemUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4072C71348A00F4A2B9 /* StoreItemUseCaseImpl.swift */; };
 		9E80A40A2C713BDA00F4A2B9 /* DataResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4092C713BDA00F4A2B9 /* DataResultResponse.swift */; };
 		9E80A40C2C713BF600F4A2B9 /* DataResultResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A40B2C713BF600F4A2B9 /* DataResultResponseStatus.swift */; };
 		9E80A40E2C713D4200F4A2B9 /* DomainResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A40D2C713D4200F4A2B9 /* DomainResultStatus.swift */; };
-		9E80A4122C71414800F4A2B9 /* FetchItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4112C71414800F4A2B9 /* FetchItemsUseCase.swift */; };
+		9E80A4122C71414800F4A2B9 /* FetchItemsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4112C71414800F4A2B9 /* FetchItemsUseCaseProtocol.swift */; };
 		9E80A4142C7142B400F4A2B9 /* FetchItemsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E80A4132C7142B400F4A2B9 /* FetchItemsUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +33,14 @@
 		9E6D27702C67ED39001665D1 /* MKL_NifflersModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKL_NifflersModule.h; sourceTree = "<group>"; };
 		9E80A3FA2C71287400F4A2B9 /* MarketRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRequirement.swift; sourceTree = "<group>"; };
 		9E80A3FD2C71292F00F4A2B9 /* MarketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketList.swift; sourceTree = "<group>"; };
-		9E80A4002C712A6700F4A2B9 /* StoreItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemUseCase.swift; sourceTree = "<group>"; };
+		9E80A4002C712A6700F4A2B9 /* StoreItemUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemUseCaseProtocol.swift; sourceTree = "<group>"; };
 		9E80A4032C712B9C00F4A2B9 /* WrapperDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperDataResponse.swift; sourceTree = "<group>"; };
 		9E80A4052C712DF300F4A2B9 /* DomainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainResponse.swift; sourceTree = "<group>"; };
 		9E80A4072C71348A00F4A2B9 /* StoreItemUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemUseCaseImpl.swift; sourceTree = "<group>"; };
 		9E80A4092C713BDA00F4A2B9 /* DataResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResultResponse.swift; sourceTree = "<group>"; };
 		9E80A40B2C713BF600F4A2B9 /* DataResultResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResultResponseStatus.swift; sourceTree = "<group>"; };
 		9E80A40D2C713D4200F4A2B9 /* DomainResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainResultStatus.swift; sourceTree = "<group>"; };
-		9E80A4112C71414800F4A2B9 /* FetchItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsUseCase.swift; sourceTree = "<group>"; };
+		9E80A4112C71414800F4A2B9 /* FetchItemsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsUseCaseProtocol.swift; sourceTree = "<group>"; };
 		9E80A4132C7142B400F4A2B9 /* FetchItemsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsUseCaseImpl.swift; sourceTree = "<group>"; };
 		CF8D19529D693F0161B199CC /* Pods-MKL-NifflersModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKL-NifflersModule.release.xcconfig"; path = "Target Support Files/Pods-MKL-NifflersModule/Pods-MKL-NifflersModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +146,7 @@
 		9E80A40F2C71412000F4A2B9 /* storeItem */ = {
 			isa = PBXGroup;
 			children = (
-				9E80A4002C712A6700F4A2B9 /* StoreItemUseCase.swift */,
+				9E80A4002C712A6700F4A2B9 /* StoreItemUseCaseProtocol.swift */,
 				9E80A4072C71348A00F4A2B9 /* StoreItemUseCaseImpl.swift */,
 			);
 			path = storeItem;
@@ -155,7 +155,7 @@
 		9E80A4102C71413100F4A2B9 /* fetchItems */ = {
 			isa = PBXGroup;
 			children = (
-				9E80A4112C71414800F4A2B9 /* FetchItemsUseCase.swift */,
+				9E80A4112C71414800F4A2B9 /* FetchItemsUseCaseProtocol.swift */,
 				9E80A4132C7142B400F4A2B9 /* FetchItemsUseCaseImpl.swift */,
 			);
 			path = fetchItems;
@@ -281,13 +281,13 @@
 				9E5A6EDF2C682A99004884C2 /* MarketItem.swift in Sources */,
 				9E80A4062C712DF300F4A2B9 /* DomainResponse.swift in Sources */,
 				9E80A40E2C713D4200F4A2B9 /* DomainResultStatus.swift in Sources */,
-				9E80A4012C712A6700F4A2B9 /* StoreItemUseCase.swift in Sources */,
+				9E80A4012C712A6700F4A2B9 /* StoreItemUseCaseProtocol.swift in Sources */,
 				9E80A4082C71348A00F4A2B9 /* StoreItemUseCaseImpl.swift in Sources */,
 				9E5A6EDC2C682974004884C2 /* DataRepository.swift in Sources */,
 				9E80A3FB2C71287400F4A2B9 /* MarketRequirement.swift in Sources */,
 				9E80A3FE2C71293000F4A2B9 /* MarketList.swift in Sources */,
 				9E80A40A2C713BDA00F4A2B9 /* DataResultResponse.swift in Sources */,
-				9E80A4122C71414800F4A2B9 /* FetchItemsUseCase.swift in Sources */,
+				9E80A4122C71414800F4A2B9 /* FetchItemsUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

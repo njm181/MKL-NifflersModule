@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StoreItemUseCaseImpl: StoreItemUseCase {
+struct StoreItemUseCaseImpl: StoreItemUseCaseProtocol {
     
     typealias T = MarketRequirement
     

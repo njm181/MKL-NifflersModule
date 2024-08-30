@@ -10,4 +10,9 @@ import Foundation
 public struct MarketList {
     public let listOfItems: [MarketRequirement]
     public let id: String
+    
+    public init(listOfItems: [MarketRequirement], id: String) {
+        self.listOfItems = listOfItems
+        self.id = id
+    }
 }

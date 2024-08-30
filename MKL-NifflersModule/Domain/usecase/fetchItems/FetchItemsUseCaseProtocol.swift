@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol FetchItemsUseCase {
+public protocol FetchItemsUseCaseProtocol {
     
     associatedtype T
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol StoreItemUseCase {
+public protocol StoreItemUseCaseProtocol {
     
     associatedtype T
     

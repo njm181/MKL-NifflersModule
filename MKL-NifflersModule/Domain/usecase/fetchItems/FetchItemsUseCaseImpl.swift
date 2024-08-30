@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FetchItemsUseCaseImpl: FetchItemsUseCase {
+struct FetchItemsUseCaseImpl: FetchItemsUseCaseProtocol {
     typealias T = [MarketRequirement]
     
     private let repository: DataRepository
