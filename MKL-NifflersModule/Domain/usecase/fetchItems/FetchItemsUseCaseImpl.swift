@@ -16,8 +16,8 @@ struct FetchItemsUseCaseImpl: FetchItemsUseCase {
         self.repository = repository
     }
     
-    func fetchItems() async throws -> DomainResponse<[MarketRequirement]?> {
-        let result = try await repository.fetchItems()
+    func fetchItems(collectionName: String) async throws -> DomainResponse<[MarketRequirement]?> {
+        let result = try await repository.fetchItems(collectionName: collectionName)
         
         switch result.status {
         case .SUCCESS:

@@ -10,5 +10,5 @@ import Foundation
 public protocol DataRepository {
     
     func storeItem(collectionName: String, marketRequirement: MarketRequirement) async throws -> DataResultResponse<Any>
-    func fetchItems() async throws -> DataResultResponse<Any>
+    func fetchItems(collectionName: String) async throws -> DataResultResponse<Any>
 }

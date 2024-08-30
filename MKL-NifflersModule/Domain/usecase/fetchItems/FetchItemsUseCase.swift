@@ -11,5 +11,5 @@ public protocol FetchItemsUseCase {
     
     associatedtype T
     
-    func fetchItems() async throws -> DomainResponse<T?>
+    func fetchItems(collectionName: String) async throws -> DomainResponse<T?>
 }
