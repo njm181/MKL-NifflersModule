@@ -11,5 +11,5 @@ public protocol StoreItemUseCase {
     
     associatedtype T
     
-    func storeItem(marketItem: MarketItem) async throws -> DomainResponse<T?>
+    func storeItem(collectionName: String, marketRequirement: MarketRequirement) async throws -> DomainResponse<T?>
 }
