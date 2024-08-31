@@ -8,7 +8,7 @@
 import Foundation
 
 public struct DataResultResponse<T> {
-    public let data: T?
+    public var data: T?
     public let status: DataResultResponseStatus
     public let message: String?
     
