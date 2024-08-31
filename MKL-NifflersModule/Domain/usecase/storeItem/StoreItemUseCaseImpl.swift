@@ -18,8 +18,12 @@ struct StoreItemUseCaseImpl: StoreItemUseCaseProtocol {
         self.repository = repository
     }
     
-    func storeItem(collectionName: String, marketRequirement: MarketRequirement) async throws -> DomainResponse<MarketRequirement?> {
-        let result = try await repository.storeItem(collectionName: collectionName, marketRequirement: marketRequirement)
+    func storeItem(collectionName: String, documentName: String, marketRequirement: MarketRequirement) async throws -> DomainResponse<MarketRequirement?> {
+        let result = try await repository.storeItem(
+            collectionName: collectionName,
+            documentName: documentName,
+            marketRequirement: marketRequirement
+        )
             
         switch result.status {
             
